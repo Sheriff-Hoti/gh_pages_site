@@ -38,7 +38,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.DEPLOY_TOKEN }}
           source: 'dist'  # Specify the source directory containing your built files
           branch: main  # Change this to the branch you want to deploy to (optional)
           fail_on_errors: true  # Optional, set to false to allow deployment even on build errors
