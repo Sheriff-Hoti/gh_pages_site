@@ -9,8 +9,8 @@ import viteLogo from '/vite.svg'
  * @slot - This element has a slot
  * @csspart button - The button
  */
-@customElement('my-element')
-export class MyElement extends LitElement {
+@customElement('main-component')
+export class MainComponent extends LitElement {
   /**
    * Copy for the read the docs hint.
    */
@@ -34,6 +34,7 @@ export class MyElement extends LitElement {
         </a>
       </div>
       <slot></slot>
+      <h1 class="text-3xl font-bold underline text-red-400">helloo there</h1>
       <div class="card">
         <button @click=${this._onClick} part="button">
           count is ${this.count}
@@ -122,6 +123,6 @@ export class MyElement extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-element': MyElement
+    'main-component': MainComponent
   }
 }
