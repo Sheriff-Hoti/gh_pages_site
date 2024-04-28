@@ -14,7 +14,7 @@ export class MainComponent extends LitElement {
   render() {
     return html`
       <div class="bg-red-400">
-      hello with typescript(if it works bg should be red)
+      hello with tailwind(if it works bg should be red)
       </div>
     `
   }
